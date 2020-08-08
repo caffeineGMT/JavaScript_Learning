@@ -1,5 +1,7 @@
 # JavaScript Note
 
+This is a repo recording any important note or thought when learning JavaScript. Most of the note/solution will be based on MOOC course "Code with Mosh" JavaScript Series.
+
 ## 1.Node.JS, npm, V8: term kick-off
 
 ### August 7th, 2020 - Thursday
@@ -15,7 +17,7 @@
 
 **link:** [youtube](https://www.youtube.com/watch?v=pU9Q6oiQNd0)
 
-## 2.Array
+## 2.
 
 ### August 8th, 2020 - Friday
 

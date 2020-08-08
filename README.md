@@ -4,15 +4,22 @@ The JavaScript learning note is [here](docs/README.md).
 
 ---
 
+# JavaScript Learning Certificate
+
+![d](certificate-of-completion-for-javascript-basics.pdf)
+
+---
+
 # Log Template
 
 The following is showing how to use the template.The original template repo was created by [James Priest](https://github.com/james-priest/100-days-log-template). In order to implement the template on your machine, please follow the instructions below written by [James Priest](https://github.com/james-priest/100-days-log-template).
 
-This repo is used to track progress for Alexander Kallaway's 100 Days of Code Challenge ([https://100daysofcode.com](https://100daysofcode.com)).
+The original repo is used to track progress for Alexander Kallaway's 100 Days of Code Challenge ([https://100daysofcode.com](https://100daysofcode.com)).
 
 It's made available to anyone that would like to fork this repo in order to also track their progress using GitHub Pages. It uses a customized version of the [Leap day theme](https://github.com/pages-themes/leap-day) (see preview [here](https://pages-themes.github.io/leap-day/)) and allows simple customization of page titles & colors schemes.
 
 - [JavaScript Note](#javascript-note)
+- [JavaScript Learning Certificate](#javascript-learning-certificate)
 - [Log Template](#log-template)
   - [Overview](#overview)
   - [Getting Started](#getting-started)
