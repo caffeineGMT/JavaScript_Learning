@@ -1,16 +1,13 @@
-
 class Circle {
     constructor(radius) {
-        this.radius = radius; 
+        this.radius = radius;
     }
 
     // These methods will be added to the prototype. 
-    draw() {
-    }
+    draw() {}
 
     // This will be available on the Circle class (Circle.parse())
-    static parse(str) {
-    }
+    static parse(str) {}
 }
 
 // Using symbols to implement private properties and methods
@@ -20,14 +17,13 @@ const _draw = Symbol();
 class Square {
     constructor(size) {
         // "Kind of" private property 
-        this[_size] = size; 
+        this[_size] = size;
     }
 
     // "Kind of" private method 
-    [_draw]() {
-    }
+    [_draw]() {}
 
-    // By "kind of" I mean: these properties and methods are essentally
+    // By "kind of" I mean: these properties and methods are essentially
     // part of the object and are accessible from the outside. But accessing
     // them is hard and awkward. 
 }

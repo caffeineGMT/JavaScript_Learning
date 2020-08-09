@@ -1,4 +1,3 @@
-
 // Module formats
 //  - AMD / Asynchronous Module Definition (Browser)
 //  - CommonJS (Node)
@@ -6,16 +5,15 @@
 //  - ES6 Modules 
 
 // CommonJS (Used in Node)
-// Exporting 
-module.exports.Cirlce = Circle; 
-// Importing 
 const Circle = require('./circle');
+console.log(Circle);
+
 
 // ES6 Modules (Used in Browser)
-// Exporting
-export class Square {}
-// Importing 
-import {Square} from './square'; 
+// import a from "./square.js";
+import {
+    Square
+} from "./square.mjs";
 
 // We use Babel to transpile our modern JavaScript code 
 // into code that browsers can understand (typically ES5). 
