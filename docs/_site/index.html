@@ -85,19 +85,90 @@
 
 <p>This is a repo recording any important note or thought when learning JavaScript. Most of the note/solution will be based on MOOC course “Code with Mosh” JavaScript Series.</p>
 
-<h2 id="object---undefined-and-null">Object - Undefined and Null</h2>
+<h2 id="prototypes---note-from-code-with-mosh">Prototypes - Note from Code with Mosh</h2>
 
-<h3 id="august-8th-2020---saturday">August 8th, 2020 - Saturday</h3>
+<h3 id="august-9th-2020---sunday">August 9th, 2020 - Sunday</h3>
 
-<p><strong>project:</strong> It is a bit weird to read MDZ’s JavaScript document. Especially <code class="highlighter-rouge">[,</code> symbol is very hard to understand</p>
+<p><strong>project:</strong> transfer all code note for Prototype section</p>
 
 <p><strong>note:</strong></p>
 
-<p><strong>link:</strong></p>
+<ul>
+  <li>classical inheritance vs prototypical inheritance
+    <ul>
+      <li>Object prototype doesn’t have a parent proto</li>
+      <li>prototype is an object, it could save method/property that could be shared in instance</li>
+      <li>when accessing an property or method of an object, it will look up in this object first, if not found, it will look up in its direct parent(prototype), all the way until root object, which is Object prototype.</li>
+    </ul>
+  </li>
+  <li>property descriptors</li>
+  <li>constructor prototype</li>
+  <li>don’t modify built-in object</li>
+  <li>instance member and prototype member</li>
+  <li>iterating instance property and prototype property</li>
+  <li>prototype only have access to public member of instance created by constructor, it doesnt have access to constructor’s local variable. In other word, because method in prototype is not defined inside a constructor, it does not contain the closure scope as the method defined inside the constructor</li>
+</ul>
 
-<h2 id="object">Object</h2>
+<p><strong>link:</strong> <a href="https://github.com/caffeineGMT/JavaScript_Learning/blob/master/class/prototypes.js">solution repo</a></p>
 
-<h3 id="august-9th-2020---sunday">August 9th, 2020 - Sunday</h3>
+<h2 id="prototypical-inheritance---note-from-code-with-mosh">Prototypical Inheritance - Note from Code with Mosh</h2>
+
+<h3 id="august-9th-2020---sunday-1">August 9th, 2020 - Sunday</h3>
+
+<p><strong>project:</strong> transfer all code note for Prototypical Inheritance section</p>
+
+<p><strong>note:</strong></p>
+
+<ul>
+  <li>d</li>
+</ul>
+
+<h2 id="es6-class---note-from-code-with-mosh">ES6 Class - Note from Code with Mosh</h2>
+
+<h3 id="august-9th-2020---sunday-2">August 9th, 2020 - Sunday</h3>
+
+<p><strong>project:</strong> transfer all code note for Class section</p>
+
+<p><strong>note:</strong></p>
+
+<ul>
+  <li>function hoisting</li>
+  <li><a href="https://github.com/caffeineGMT/JavaScript_Learning/blob/master/class/classes.js">instance method and static method</a></li>
+  <li><a href="https://github.com/caffeineGMT/JavaScript_Learning/blob/master/class/classes.js">private members</a>:
+    <ul>
+      <li>symbol</li>
+      <li>getter and setter</li>
+      <li>weakMap</li>
+    </ul>
+  </li>
+  <li><a href="https://github.com/caffeineGMT/JavaScript_Learning/blob/master/class/classes.js">method overriding</a>: prototypical path to find a method, from child to parent</li>
+  <li><a href="https://github.com/caffeineGMT/JavaScript_Learning/blob/master/class/classes.js">inheritance</a></li>
+  <li><code class="highlighter-rouge">this</code> keyword:
+    <ul>
+      <li><code class="highlighter-rouge">this</code> keyword - <code class="highlighter-rouge">use strict</code> mode will be used as default setting in ES6 class</li>
+      <li>in Java class, <code class="highlighter-rouge">this</code> is used when there is a need to clear ambiguity, such as the instance member’s name is the same as the parameter’s name passed into the method. if not the case, there is no need to use <code class="highlighter-rouge">this</code></li>
+      <li>in JS class, <code class="highlighter-rouge">this</code> points to current object, we have to use <code class="highlighter-rouge">this</code> in function to provide running context,see <a href="https://www.youtube.com/watch?v=zE9iro4r918">very useful link</a>
+        <ul>
+          <li>implicit binding</li>
+          <li>explicit binding: bind(),call(),apply()</li>
+          <li>new binding: <code class="highlighter-rouge">new</code> keyword will implicitly bind function/field to object when creating the instance</li>
+          <li>window</li>
+        </ul>
+      </li>
+      <li>there is a clear demo of using class to create instance vs traditional way of creating an instance: <a href="https://github.com/caffeineGMT/JavaScript_Learning/blob/master/objects/stopWatch.js">link</a>
+        <ul>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures">closure</a></li>
+          <li>class is the syntactic sugar over old constructor function</li>
+        </ul>
+      </li>
+      <li>getter and setter</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="object---note-from-code-with-mosh">Object - Note from Code with Mosh</h2>
+
+<h3 id="august-9th-2020---sunday-3">August 9th, 2020 - Sunday</h3>
 
 <p><strong>project:</strong> transfer all code note for Object section</p>
 
@@ -105,10 +176,43 @@
 
 <ul>
   <li>object literal: this can have issue when object have “behavior”, function would be duplicated in different object</li>
-  <li><a href="../objects/11-factoryFunction&amp;constructorFunction.js">factory function</a></li>
+  <li><a href="https://github.com/caffeineGMT/JavaScript_Learning/blob/master/objects/factoryFunction&amp;constructorFunction.js">factory function</a></li>
+  <li>when using constructor function to create an object, <code class="highlighter-rouge">this</code> will point to an empty object and attach property to it. And we don’t need to explicitly return <code class="highlighter-rouge">this</code> because it will do it automatically</li>
+  <li><a href="https://github.com/caffeineGMT/JavaScript_Learning/blob/master/objects/constructorProperty.js">constructor property</a>: if using object literal, the constructor property will be using Object constructor</li>
+  <li>value/primitives types: number,string,boolean,symbol,undefined,null</li>
+  <li>reference types: object, function, array</li>
+  <li><a href="https://github.com/caffeineGMT/JavaScript_Learning/blob/master/objects/add&amp;removeProperties.js">adding/removing property</a>: js object can dynamically add/remove properties on the fly</li>
+  <li><a href="https://github.com/caffeineGMT/JavaScript_Learning/blob/master/objects/enumerateProperty.js">enumerate property</a></li>
+  <li><a href="https://github.com/caffeineGMT/JavaScript_Learning/blob/master/objects/functionObject.js">function object</a>:
+    <ul>
+      <li>function object constructor</li>
+      <li><code class="highlighter-rouge">func.call()</code> and <code class="highlighter-rouge">func.apply()</code> and <code class="highlighter-rouge">func.bind()</code></li>
+    </ul>
+  </li>
+  <li><a href="https://github.com/caffeineGMT/JavaScript_Learning/blob/master/objects/privateMethod&amp;property.js">private method and property</a>: scope and closure
+    <ul>
+      <li>scope is block scope, <code class="highlighter-rouge">let</code> variable initialize and die in lifecycle of the function</li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures">closure</a>: an inner function can access parent variable</li>
+    </ul>
+  </li>
+  <li><a href="https://github.com/caffeineGMT/JavaScript_Learning/blob/master/objects/getter&amp;setter.js">getter and setter</a>
+    <ul>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty">using defineProperty</a></li>
+    </ul>
+  </li>
 </ul>
 
-<p><strong>link:</strong></p>
+<h2 id="function---note-from-code-with-mosh">Function - Note from Code with Mosh</h2>
+
+<h3 id="august-8th-2020---saturday">August 8th, 2020 - Saturday</h3>
+
+<p><strong>project:</strong> transfer all code note for Object section</p>
+
+<p><strong>note:</strong></p>
+
+<ul>
+  <li>function</li>
+</ul>
 
 <h2 id="function---arraymap-and-arrayfilter">Function - Array.map() and Array.filter()</h2>
 
@@ -145,7 +249,7 @@
 
 <p><strong>link:</strong> <a href="http://cassandrawilcox.me/beginners-guide-developer-documentation/">detailed explaination</a></p>
 
-<h2 id="modules---module">Modules - Module</h2>
+<h2 id="modules---note-from-code-with-mosh">Modules - Note from Code with Mosh</h2>
 
 <h3 id="august-7th-2020---thursday">August 7th, 2020 - Thursday</h3>
 
@@ -178,9 +282,6 @@
 </ul>
 
 <p><strong>link:</strong> <a href="https://www.youtube.com/watch?v=pU9Q6oiQNd0">youtube</a></p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-</code></pre></div></div>
 
 
     </section>

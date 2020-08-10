@@ -6,7 +6,8 @@ The JavaScript learning note is [here](docs/README.md).
 
 # JavaScript Learning Certificate
 
-![certificate](docs/assets/images/certificate-of-completion-for-javascript-basics.png)
+![certificate](docs/assets/images/certificate-part1.png)
+![certificate](docs/assets/images/certificate-part2.png)
 
 ---
 
